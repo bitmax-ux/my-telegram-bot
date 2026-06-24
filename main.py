@@ -22,7 +22,7 @@ def keep_alive():
 keep_alive()
 
 # የአንተ የቦት መረጃዎች
-BOT_TOKEN = "8887015953:AAHarP6TAfFbOUwic8OlnVBnmSobM9jRCzE"
+BOT_TOKEN = "8887015953:AAFpms2COuvB75ZG44Fe1p_WfBB05SQjN5E"
 BOT_USERNAME = "ethioo_helper_bot"
 
 bot = telebot.TeleBot(BOT_TOKEN)
