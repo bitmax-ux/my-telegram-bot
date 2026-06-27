@@ -23,8 +23,11 @@ def keep_alive():
 keep_alive()
 
 # --- 2. የቦት መረጃዎች ---
-BOT_TOKEN = "8887015953:AAFpms2COuvB75ZG44Fe1p_WfBB05SQjN5E"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 BOT_USERNAME = "ethioo_helper_bot"
+
+if not BOT_TOKEN:
+    raise RuntimeError("BOT_TOKEN environment variable is not set! Render dashboard -> Environment ላይ ጨምረው።")
 
 bot = telebot.TeleBot(BOT_TOKEN)
 group_stats = {}
